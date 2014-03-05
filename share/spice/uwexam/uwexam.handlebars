@@ -1,0 +1,19 @@
+<ul>
+	{{#each data.sections}}
+		<li><p><grey>Section {{section}}</grey> 
+
+		{{#if day}}
+			{{day}} {{date}} <uwexam_start>{{start_time}}</uwexam_start> <grey>to</grey> {{end_time}}
+		{{/if}}
+
+		{{#if location}}
+			<grey>at</grey> <a href="https://uwaterloo.ca/map">{{location}}</a>
+		{{/if}}
+		 
+		{{#if notes}}
+			{{notes}}
+		{{/if}}
+		</p>
+		</li>
+	{{/each}}
+</ul>
